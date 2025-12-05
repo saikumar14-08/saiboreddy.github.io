@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sai B - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=IBM+Plex+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body id="body-theme">
+    <div id="particle-background"></div>
+    <div class="container">
+      <div class="nav-bar">
+        <div class="nav-links-group">
+          <a
+            href="javascript:void(0)"
+            class="nav-link"
+            onclick="showSection(event, 'home')"
+            >1. HOME</a
+          >
+          <a
+            href="javascript:void(0)"
+            class="nav-link"
+            onclick="showSection(event, 'skills')"
+            >2. SKILLS</a
+          >
+
+          <a
+            href="javascript:void(0)"
+            class="nav-link"
+            onclick="showSection(event, 'projects')"
+            >3. PROJECTS</a
+          >
+          <a
+            href="javascript:void(0)"
+            class="nav-link"
+            onclick="showSection(event, 'about')"
+            >4. ABOUT_ME</a
+          >
+          <a
+            href="javascript:void(0)"
+            class="nav-link"
+            onclick="showSection(event, 'contact')"
+            >5. CONTACT</a
+          >
+        </div>
+        <button id="mode-toggle" aria-label="Toggle light and dark mode">
+          🌞
+        </button>
+      </div>
+
+      <div class="content">
+        <section id="home" class="section active">
+          <h1>
+            <span id="typed-text"></span><span class="cursor">&nbsp;</span>
+          </h1>
+          <p>
+            <strong
+              ><span style="color: var(--color-accent-orange)"
+                >ARCHITECTING ENTERPRISE-GRADE SOLUTIONS ACROSS .NET, AZURE, AND
+                ANGULAR</span
+              ></strong
+            >
+          </p>
+          <p>
+            Welcome to my professional portfolio. I bring 6 years of IT
+            experience in the full SDLC, specializing in N-tier Enterprise Web
+            Applications. Navigate to explore my full stack expertise and key
+            contributions in Agile, Scrum, and TDD environments
+          </p>
+          <br />
+          <button class="cta-button" onclick="showSection(event, 'projects')">
+            VIEW PROJECTS &gt;&gt;
+          </button>
+        </section>
+
+        <section id="about" class="section">
+          <h2 style="margin-top: 30px">ACADEMIC RECORD</h2>
+
+          <div class="sys-info-block">
+            <h3>
+              <span class="sys-component">DEGREE:</span> Master of Science in
+              Applied Computer Science
+            </h3>
+            <ul>
+              <li>
+                • Institution:
+                <a
+                  href="https://semo.edu/"
+                  target="_blank"
+                  style="
+                    color: var(--color-text-primary);
+                    text-decoration: underline;
+                  "
+                  >Southeast Missouri State University</a
+                >
+              </li>
+              <li>• Location: Cape Girardeau, MO, USA</li>
+            </ul>
+          </div>
+
+          <h2 style="margin-top: 30px">ACHIEVEMENTS AND CERTIFICATIONS</h2>
+
+          <div class="sys-info-block">
+            <h3>
+              <span class="sys-component">AWARD:</span> Best Performer
+              Recognition
+            </h3>
+            <ul>
+              <li>
+                • Recognized as a <strong>Performer</strong> during my tenure at
+                Morgan Stanley.
+              </li>
+              <li>
+                • Awarded for exceeding project goals and delivering
+                high-quality, efficient enterprise solutions at Novature Tech.
+              </li>
+            </ul>
+          </div>
+
+          <div class="sys-info-block">
+            <h3>
+              <span class="sys-component">ACADEMIC:</span> Merit Scholarship
+            </h3>
+            <ul>
+              <li>
+                • Awarded a <strong>100% Merit Scholarship</strong> for three
+                semesters at Southeast Missouri State University.
+              </li>
+              <li>
+                • Received in recognition of outstanding academic performance in
+                the Master of Science program.
+              </li>
+            </ul>
+          </div>
+
+          <div class="sys-info-block">
+            <h3>
+              <span class="sys-component">CERTIFICATIONS:</span> Microsoft Azure
+            </h3>
+            <ul>
+              <li>• <strong> AZ-900:</strong> Microsoft Azure Fundamentals</li>
+              <li>
+                • <strong> DP-900:</strong> Microsoft Azure Data Fundamentals
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="skills" class="section">
+          <h2>TECHNICAL CAPABILITIES</h2>
+          <pre class="sys-info-border">
+=================================================</pre
+          >
+          <div class="sys-info-block">
+            <h3>Frontend Development</h3>
+            <ul>
+              <li>• Angular 10/9/8 / React JS / React Native / MERN</li>
+              <li>• Typescript / JavaScript / jQuery v3.0 / AJAX / JSON</li>
+              <li>
+                • HTML5 / CSS3 / Bootstrap / Tailwind / Angular material /
+                Material design
+              </li>
+              <li>• Jest / Playwright / Cypress / Jasmine Framework</li>
+            </ul>
+          </div>
+
+          <div class="sys-info-block">
+            <h3>Backend Processing</h3>
+            <ul>
+              <li>• .NET 6 / .NET Core / .Net Framework</li>
+              <li>• C# / VB.Net</li>
+              <li>• ASP.NET MVC / Web API / REST / Microservices</li>
+            </ul>
+          </div>
+
+          <div class="sys-info-block">
+            <h3>Databases</h3>
+            <ul>
+              <li>• Microsoft SQL Server / MySQL</li>
+              <li>• Oracle DB</li>
+              <li>• Entity Framework / LINQ</li>
+            </ul>
+          </div>
+
+          <div class="sys-info-block">
+            <h3>Cloud & Tools</h3>
+            <ul>
+              <li>• Azure / AWS Cloud Services</li>
+              <li>• Git / Github / Gitlab / Bitbucket / TFS / Azure DevOps</li>
+              <li>• Docker / CI/CD</li>
+            </ul>
+          </div>
+          <pre class="sys-info-border">
+=================================================</pre
+          >
+        </section>
+
+        <section id="projects" class="section">
+          <h2>PROJECTS</h2>
+          <div class="project-grid">
+            <div class="project-card">
+              <div>
+                <h3>ShelfSpace: ASP.NET Core MVC E-Commerce Platform</h3>
+                <span class="tags"
+                  >[BACKEND] [ASP.NET CORE MVC / C# / SQL SERVER]</span
+                >
+                <p>
+                  Developed a full-stack e-commerce application using
+                  <strong>ASP.NET Core MVC</strong> with a clean
+                  <strong
+                    >3-tier architecture (UI → Business Layer → Data
+                    Layer)</strong
+                  >. Implemented strong <strong>OOP principles</strong>,
+                  repository patterns, model validation, and secure
+                  authentication. Focused on scalable backend structure, proper
+                  separation of concerns, and SQL-based data persistence.
+                </p>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/saikumar14-08/ShelfSpace"
+                  target="_blank"
+                  >[VIEW CODE]</a
+                >
+                <a href="YOUR_LIVE_DEMO_URL_HERE" target="_blank"
+                  >[LIVE DEMO]</a
+                >
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div>
+                <h3>DevConnect-Web: MERN Microservices Platform</h3>
+                <span class="tags"
+                  >[FULL-STACK] [MERN / NODE.JS / MICROSERVICES]</span
+                >
+                <p>
+                  Built a distributed
+                  <strong>MERN microservices</strong> application demonstrating
+                  real-world service isolation and API-driven communication.
+                  Designed independent
+                  <strong>Node.js/Express REST APIs</strong>, integrated MongoDB
+                  for document storage, and implemented a responsive
+                  <strong>React.js</strong> client. Highlights understanding of
+                  modern web architecture, modular design, and deployment-ready
+                  backend patterns.
+                </p>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/saikumar14-08/DevConnect-Web"
+                  target="_blank"
+                  >[VIEW CODE]</a
+                >
+                <a href="YOUR_LIVE_DEMO_URL_HERE" target="_blank"
+                  >[LIVE DEMO]</a
+                >
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div>
+                <h3>
+                  Flix Movies: React Application with Serverless Authentication
+                </h3>
+                <span class="tags">[FRONTEND] [REACT / FIREBASE AUTH]</span>
+                <p>
+                  Built a fully responsive movie-browsing UI using
+                  <strong>React.js (hooks, components, state management)</strong
+                  >. Integrated
+                  <strong>Firebase Authentication & Firestore</strong> for
+                  secure, serverless user management and data operations.
+                  Demonstrates frontend engineering, API integration, and
+                  cloud-based authentication workflows.
+                </p>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/saikumar14-08/Flix_Movies"
+                  target="_blank"
+                  >[VIEW CODE]</a
+                >
+                <a href="YOUR_LIVE_DEMO_URL_HERE" target="_blank"
+                  >[LIVE DEMO]</a
+                >
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div>
+                <h3>Retro Portfolio Website</h3>
+                <span class="tags"
+                  >[FULL-STACK] [HTML / CSS / JAVASCRIPT / UX DESIGN]</span
+                >
+                <p>
+                  Designed and developed a personal portfolio using a unique
+                  <strong>retro command-line UI theme</strong>. Built from
+                  scratch with semantic <strong>HTML</strong>, optimized
+                  <strong>CSS layouts</strong>, and interactive
+                  <strong>JavaScript</strong>. Demonstrates strong front-end
+                  fundamentals, responsive design, branding, and UX execution.
+                </p>
+              </div>
+              <div class="project-links">
+                <a href="YOUR_PORTFOLIO_CODE_REPO_HERE" target="_blank"
+                  >[VIEW CODE]</a
+                >
+                <a href="YOUR_PORTFOLIO_LIVE_URL_HERE" target="_blank"
+                  >[LIVE DEMO]</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="section">
+          <h2>LET'S CONNECT</h2>
+          <form
+            id="contact-form"
+            action="https://formspree.io/f/mpwvllaw"
+            method="POST"
+            style="
+              display: flex;
+              flex-direction: column;
+              max-width: 500px;
+              gap: 15px;
+              margin-bottom: 25px;
+            "
+          >
+            <label style="font-family: 'Fira Code', 'IBM Plex Mono', monospace"
+              >NAME:*</label
+            >
+            <input type="text" name="name" required />
+
+            <label style="font-family: 'Fira Code', 'IBM Plex Mono', monospace"
+              >EMAIL:*</label
+            >
+            <input type="email" name="email" required />
+
+            <label style="font-family: 'Fira Code', 'IBM Plex Mono', monospace"
+              >MOBILE:</label
+            >
+            <input
+              type="tel"
+              name="mobile"
+              pattern="[0-9+\-\s]{7,20}"
+              placeholder="+1 234-567-8901"
+            />
+
+            <label style="font-family: 'Fira Code', 'IBM Plex Mono', monospace"
+              >MESSAGE:</label
+            >
+            <textarea rows="4" name="message" required></textarea>
+
+            <button
+              type="submit"
+              class="cta-button"
+              style="align-self: flex-start"
+            >
+              SEND MESSAGE &gt;
+            </button>
+          </form>
+          <p style="font-family: 'Fira Code', 'IBM Plex Mono', monospace">
+            <a
+              href="https://www.linkedin.com/in/saikrb/"
+              target="_blank"
+              style="color: var(--color-accent-blue)"
+              >[LINKEDIN]</a
+            >
+            |
+            <a
+              href="https://github.com/saikumar14-08"
+              target="_blank"
+              style="color: var(--color-accent-blue)"
+              >[GITHUB]</a
+            >
+            |
+            <a
+              href="https://drive.google.com/file/d/1Uat8FkN_b3dNomKibe8NnHj6wAhAg2u5/view?usp=drive_link"
+              target="_blank"
+              style="color: var(--color-accent-blue)"
+              >[RESUME.PDF]</a
+            >
+          </p>
+        </section>
+      </div>
+      <footer class="portfolio-footer">
+        <p>Copyright &copy; 2025 Sai B. All Rights Reserved. | <span class="footer-note">Designed and Developed with 💖 in the Retro Terminal Theme.</span></p>
+    </footer>
+    </div>  
+
+    <div
+      id="retro-alert-modal"
+      style="
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 100;
+      "
+    >
+      <div
+        style="
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          padding: 20px;
+          background: var(--color-surface);
+          border: 5px solid var(--color-text-primary);
+          box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 0.8);
+        "
+      >
+        <h3
+          style="
+            margin-top: 0;
+            color: var(--color-accent-blue);
+            font-size: 1.2em;
+          "
+        >
+          [ALERT]
+        </h3>
+        <p style="font-family: 'Fira Code', 'IBM Plex Mono', monospace">
+          MESSAGE_TRANSMISSION_COMPLETE.TXT
+        </p>
+        <p>
+          Thank you for reaching out. I will respond to your query within 2
+          hours. Closing window...
+        </p>
+        <button class="cta-button" onclick="closeRetroAlert()">OK</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
