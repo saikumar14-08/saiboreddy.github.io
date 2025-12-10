@@ -75,6 +75,44 @@ h1, h2, h3 {
     vertical-align: middle; 
 }
 
+.cert-file-listing table {
+    width: 100%;
+    /* Remove default table borders */
+    border-collapse: collapse; 
+    font-size: 0.95rem;
+}
+
+.cert-file-listing table td {
+    padding: 5px 0;
+    /* Remove cell borders */
+    border: none; 
+    /* Use a mono font for listing consistency */
+    font-family: 'IBM Plex Mono', monospace; 
+}
+
+/* Align the status/link column to the right */
+.cert-file-listing .cert-status {
+    text-align: center; 
+    white-space: nowrap; /* Prevent status from wrapping */
+    font-weight: bold;
+}
+
+.cert-file-listing .cert-link {
+    text-align: right;
+    white-space: nowrap;
+}
+
+/* Ensure the link text is highlighted with the standard link color */
+.cert-file-listing .cert-link a {
+    color: var(--color-accent-blue);
+    text-decoration: underline; /* Emphasize link clickability */
+}
+
+.cert-file-listing .cert-name {
+    /* Use the primary text color */
+    color: var(--color-text-primary); 
+    padding-right: 20px;
+}
 /* Dark Mode Typing Cursor Color Adjustment */
 .dark-mode .cursor {
     background-color: var(--color-accent-orange); 
